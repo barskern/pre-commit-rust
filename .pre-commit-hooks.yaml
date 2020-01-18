@@ -1,29 +1,29 @@
--   id: fmt
-    name: cargo fmt
-    description: Format files with cargo fmt.
-    entry: cargo fmt
-    language: system
-    types: [rust]
-    pass_filenames: false
--   id: check
-    name: cargo check
-    description: Check the package for errors.
-    entry: cargo check
-    language: system
-    types: [rust]
-    pass_filenames: false
--   id: clippy
-    name: cargo clippy
-    description: Lint rust sources.
-    entry: cargo clippy
-    language: system
-    types: [rust]
-    args: ["--", "-D", "warnings"]
-    pass_filenames: false
--   id: test
-    name: cargo test
-    description: Run unit tests.
-    entry: cargo test
-    language: system
-    types: [rust]
-    pass_filenames: false
+- id: fmt
+  name: cargo fmt
+  description: Format files with cargo fmt.
+  entry: cargo fmt
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: check
+  name: cargo check
+  description: Check the package for errors.
+  entry: cargo check
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: clippy
+  name: cargo clippy
+  description: Lint rust sources.
+  entry: cargo clippy
+  language: system
+  types: [rust]
+  args: ["--", "-D", "warnings"]
+  pass_filenames: false
+- id: test
+  name: cargo test
+  description: Run unit tests.
+  entry: cargo test
+  language: system
+  types: [rust]
+  pass_filenames: false
